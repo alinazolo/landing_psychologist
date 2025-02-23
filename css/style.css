@@ -1,0 +1,138 @@
+
+/* BASE */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-primary-light);
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1,5;
+    background-color: var(--brand-color-background);
+}
+
+.body {
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+    
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+ul, ol {
+    list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* variables */
+:root {
+    --brand-color-red: #79000d;
+    --brand-color-background: #000000;
+    --color-primary-light: #ffffff;
+    --color-primary-dark: #cecece;
+}
+
+/* UTILS */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* SECTION */
+  .section {
+    padding: 20px 0;
+  }
+
+.section {
+    @media screen and (min-width: 768px) {
+    padding: 48px 0;
+    }
+}
+
+/* HEADER */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 16px;
+}
+
+.header {
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        }
+}
+
+.header-container-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        }
+
+/* HERO */
+.hero-section {
+    padding: 124px 0;
+    background-image: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, 
+    rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%),
+    url('../images/pexels-imagestudio-1488315.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.hero-section {
+    @media screen and (min-width: 768px) {
+        padding: 272px 0;
+    }
+}
+
+.hero-section-list {
+    
+}
