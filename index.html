@@ -6,7 +6,7 @@
     <title>Тиндер: волшебная таблетка</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -16,41 +16,193 @@
        <div class="container">
                 <nav class="header-container">
                     <ul class="header-container-list">
-                        <li><a href="#">Программа</a></li>
-                        <li><a href="#">Формат обучения</a></li>
-                        <li><a href="#">Стоимость</a></li>
+                        <li><a href="#" class="header-container-list-link">Программа</a></li>
+                        <li><a href="#" class="header-container-list-link">Формат обучения</a></li>
+                        <li><a href="#" class="header-container-list-link">Стоимость</a></li>
                     </ul>
                 </nav>
        </div>
     </header>
     <main>
         <!-- HERO -->
-        <section>
-         
-             <div class="hero-section">
-                <ul class="hero-section-list">
-                    <li>Старт: <b>1 марта</b></li>
-                    <li>Длительность: <b>3 месяца</b></li>
-                </ul>
-                 <p class="hero-section-text">Старт: 1 марта</p>
-                 <p>Мини-интенсив</p>
-                 <h1>Тиндер: волшебная таблетка</h1>
-                 <p>Цена сейчас</p>
-                 <p>€29 <s>€300</s></p>
-                 <button>Стать участником</button>
-                 <p>До конца скидки</p>
-                 <div>Timer</div>
+        <section class="section">
+            <div class="container hero-container">
+                <div class="hero-container-left">
+                    <p class="hero-container-text">Мини-интенсив</p>
+                    <div class="hero-container-title-image-wrap"><img src="./images/main-headline.png" alt="Tinder" class="hero-container-title-image"></div>
+                        <h1 class="hero-container-title">ВОЛШЕБНАЯ ТАБЛЕТКА</h1>
+                 
+                     <div class="hero-text-mini-wrap"><p class="hero-container-text-mini">4 УРОКА <span class="accent-text">+</span> 2 ГИДА <span class="accent-text">+ </span>Обратная связь</p></div>
+                     <a href="#" class="button">СТАТЬ УЧАСТНИКОМ</a>
+                 </div>
+                 <div>
+                    <img src="./images/hero-image.png" alt="Спикеры" class="hero-container-image">
+                 </div>
+                </div>
              
-         </div>
+            
         </section>
-        <!-- BUTTON -->
-        <section>
-            <h2>«Топ 10 цепляющих фраз для первого контакта» в подарок</h2>
-            <button>
-                Стать участником
-            </button>
+
+        <section  class="section">
+            
+<!-- TIMER -->
+<div class="container timer-container">
+    <h2 class="timer-title">Цена сейчас</h2>
+        <p class="timer-price-new"><span class="timer-price-old">€300</span> €29</p>
+
+    <div id="countdown">
+        <div class="time-box">
+            <span id="days" class="time-value">00</span>
+            <span class="time-label">Days</span>
+        </div>
+        <div class="time-box">
+            <span id="hours" class="time-value">00</span>
+            <span class="time-label">Hours</span>
+        </div>
+        <div class="time-box">
+            <span id="minutes" class="time-value">00</span>
+            <span class="time-label">Minutes</span>
+        </div>
+        <div class="time-box">
+            <span id="seconds" class="time-value">00</span>
+            <span class="time-label">Seconds</span>
+        </div>
+    </div>
+    <a href="#" class="button">КУПИТЬ ЗА €29</a>
+    <p>Подарок:<br>
+        «Топ 10 цепляющих фраз 
+        для первого контакта» </p>
+</div>
         </section>
+        <!-- FORMATS -->
+         <section class="section">
+            <div class="container">
+                <h2 class="titile">Формат обучения</h2>
+                <ul>
+                    <li>
+                        <p>Онлайн-уроки (доступ навсегда)  </p>
+                    </li>
+                    <li>
+                        <p>Материалы после оплаты</p>
+                    </li>
+                    <li>
+                        <p> Разбор твоей анкеты</p>
+                    </li>
+                </ul>
+            </div>
+
+         </section>
+
+         <!-- Для кого этот интенсив? -->
+         <section class="section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <p>Ты хочешь познакомиться 
+                            с достойным мужчиной, 
+                            но не знаешь, с чего начать.</p>
+                    </li>
+                    <li>
+                        <p>Тебе пишут «не те» мужчины: 
+                            несерьезные, токсичные, 
+                            не вызывающие интереса.
+                            </p>
+                    </li>
+                    <li>
+                        <p>Ты хочешь понять, как выделиться 
+                            среди  других женщин 
+                            и создать анкету, которая привлечет 
+                            лучших мужчин.
+                            </p>
+                    </li>
+                    <li>
+                        <p>Тебе нужен готовый алгоритм: 
+                            какие фото выбрать, что писать в анкете, 
+                            каких ошибок избегать.
+                            </p>
+                    </li>
+                </ul>
+                <p>Если это про тебя – добро пожаловать на курс!</p>
+                <a href="#" class="button">КУПИТЬ ЗА €29</a>
+            </div>
+         </section>
+         <!-- Наш опыт -->
+         <section class="section">
+         <div class="container">
+            <h2 class="titile">Наш опыт</h2>
+            <ul>
+                <li>
+                    <img src="./images/Виктория опыт.png" alt="Виктория опыт">
+                </li>
+                <li>
+                    <img src="./images/Анастасия опыт.png" alt="Анастасия опыт">
+                </li>
+            </ul>
+            <a href="#" class="button">СТАТЬ УЧАСТНИКОМ</a>
+        </div>
+    </section>
+    <!-- Что ждет на интенсиве -->
+    <section class="section">
+        <div class="container">
+            <h2 class="titile">Что тебя ждет на интенсиве?</h2>
+            <ul>
+                <li>
+                    4 коротких мощных урока, после которых у тебя будет идеальная анкета для знакомств
+                </li>
+                <li>
+                   <p>2  ГИДА В ПОДАРОК:</p>
+                   ✓ Как составить анкету, которая работает (структура, примеры, проверенные фразы)  
+✓ Как выбрать правильные фото (что цепляет мужчин, а что отпугивает).  
+                </li>
+                <li>
+                   <p>Обратная связь по твоей анкете!  </p>
+                   После курса у тебя будет возможность отправить нам свою анкету, и мы дадим вам разбор с рекомендациями.  
+
+                </li>
+            </ul>
+            <a href="#" class="button">КУПИТЬ ЗА €29</a>
+        </div>
+    </section>
+<!-- ПРОГРАММА -->
+    <section class="section">
+        <div class="container">
+            <h2 class="titile">Программа интенсива:</h2>
+            <ul>
+                <li>1. Как создать визуальный образ, который транслирует твою ценность и вызывает интерес.
+                    2. Рабочие стратегии: какие фото повышают количество лайков и откликов от качественных мужчин.
+                    3. Анти-фото или чего категорически нельзя выкладывать, если хотите серьезных отношений.
+                    Разбор типичных ошибок с примерами.
+                    4. Как составить описание, чтоб правильные мужчины писали первыми.
+                    4. Какие фразы или слова ципляют, а какие отталкивают.
+                    5. Распространенные ошибки в описании, которые мкшают вам привлекать достойных.
+                    6. Готовые примеры анкет, которые можно адаптировать под себя.
+                    </li>
+
+                    <li>7. Почему некоторые женщмны притягивают токсичных, несерьезных или "женатых" мужчин.
+                        8. Как подсознательные установки мешают успешным знакомствам.
+                        9. Как через профиль или переписку фильтровать неподходящих мужчин.
+                        10. Как работать с состоянием уверенности и ценности себя, чтоб притягивать достойных.
+                        11. Почему важно выбирать самой, а не просто ждать внимания.
+                        12. Как сформулировать четкий запрос на отношения и транслировать его через анкету и переписку.
+                        13. Энергия выбора: как перестать пытаться понравиться и стать той, кого выбирают.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Что ты получишь в результате?</h2>
+            <ul>
+                <li>
+                    <svg>
+                        <use href="./images/sprite.svg#icon-check"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </section>
     </main>
     <footer></footer>
+    
+    <script type="module" src="./js/1-timer.js"></script>
 </body>
 </html>

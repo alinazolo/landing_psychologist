@@ -7,18 +7,28 @@
     box-sizing: border-box;
 }
 
-body {
-    color: var(--color-primary-light);
-    font-family: "Poppins", serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1,5;
-    background-color: var(--brand-color-background);
+/* variables */
+:root {
+    --brand-color-red: #79000d;
+    --brand-color-background: #0D0E12;
+    --color-primary-light: #ffffff;
+    --color-primary-dark: #cecece;
 }
 
-.body {
+body {
+    background-color: var(--brand-color-background);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-primary-light);
+}
+
+body {
     @media screen and (min-width: 768px) {
+        
         font-size: 18px;
+        font-weight: 500;
     }
     
 }
@@ -64,13 +74,7 @@ img {
 }
 
 
-/* variables */
-:root {
-    --brand-color-red: #79000d;
-    --brand-color-background: #000000;
-    --color-primary-light: #ffffff;
-    --color-primary-dark: #cecece;
-}
+
 
 /* UTILS */
 .visually-hidden {
@@ -96,43 +100,170 @@ img {
 
 /* HEADER */
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 16px;
+    padding-top: 30px;
 }
 
-.header {
+/* .header {
     @media screen and (min-width: 768px) {
         padding-top: 32px;
         }
-}
+} */
 
 .header-container-list {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 40px;
+
+        
         }
 
-/* HERO */
-.hero-section {
-    padding: 124px 0;
-    background-image: linear-gradient(127deg, rgba(18, 18, 17, 0.78) 0%, 
-    rgba(18, 18, 17, 0.6) 63.89%, rgba(18, 18, 17, 0) 100%),
-    url('../images/pexels-imagestudio-1488315.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+        
+.header-container-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-primary-light);
 }
 
-.hero-section {
+.header-container-list-link {
     @media screen and (min-width: 768px) {
-        padding: 272px 0;
-    }
+        font-size: 20px;
+        }    
 }
 
-.hero-section-list {
+/* HERO */
+.hero-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.hero-container {
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        
+    }  
+}
+
+.hero-container-text {
+font-weight: 600;
+font-size: 60px;
+margin-bottom: 10px;
+}
+
+.hero-container-title-image {
+    width: 700px;
+}
+
+.hero-container-image {
+    width: 305px;
+}
+
+.hero-container-image {
+    @media screen and (min-width: 768px) {
+        width: 620px;
+        }  
+}
+
+.hero-container-title {
+font-weight: 800;
+font-size: 76px;
+line-height: 1.1;
+margin-top: -36px;
+margin-bottom: 30px;
+}
+
+
+.hero-container-text-mini {
+    font-size: 24px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.accent-text {
+font-size: 30px;
+}
+
+.button {
+    background-color: var(--brand-color-red);
+    color: var(--color-primary-light);
+    font-size: 32px;
+    font-weight: 700;
+    padding: 16px;
+    width: 478px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+ 
+
+
+/* TIMER */
+
+.timer-container {
+
+    display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Aligns title & timer to the left */
+            width: fit-content; /* Wraps the content */
+}
+
+.timer-title {
+font-weight: 700;
+font-size: 60px;
+color: var(--color-primary-light);
+margin-bottom: 2px;
+}
+
+.timer-price-new {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--color-primary-light);
+    margin-bottom: 8px;
+    padding-left: 48px;
+}
+
+.timer-price-old {
+font-size: 40px;
+color: #a4a3a3;
+text-decoration: line-through;
+
+}
     
+
+#countdown {
+    display: flex;
+    gap: 20px;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1); /* Transparent box */
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    height: 220px;
+}
+
+.time-value {
+    font-size: 180px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.time-label {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
