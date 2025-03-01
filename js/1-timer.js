@@ -1,5 +1,5 @@
 // 🔹 Set your fixed date & time here (YYYY-MM-DD HH:MM format)
-var targetDateTime = "2025-03-01 12:00"; // Example: March 1, 2025, at 12:00 PM
+var targetDateTime = "2025-03-02 12:00"; // Example: March 1, 2025, at 12:00 PM
 var targetTime = new Date(targetDateTime).getTime();
 
 function updateCountdown() {
