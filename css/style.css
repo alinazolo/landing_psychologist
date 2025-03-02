@@ -83,6 +83,10 @@ img {
     text-align: center;
 }
 
+.button:hover, .button:focus, .button:active {
+    background-color: #9C1F1E;
+}
+
 .button-center {
     margin: 0 auto;
 }
@@ -615,6 +619,10 @@ margin: 0 auto;
  /* Программа */
  .program-list {
 flex-direction: row;
+ }
+
+ .program-list-item {
+margin: 0;
  }
 
  .section-result {
