@@ -75,7 +75,7 @@ img {
     font-size: 20px;
     font-weight: 700;
     padding: 16px;
-    width: 330px;
+    width: 300px;
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 0.02em;
@@ -249,8 +249,8 @@ margin-bottom: 2px;
 .button-timer::before {
     content: "";
     display: block;
-    width: 576px;
-    height: 371px;
+    width: 250px;
+    height: 300px;
     border-radius: 100%;
     background-color: rgba(253, 136, 138, 0.15); /* Fixed fill issue */
     filter: blur(50px); /* Reduced for testing */
@@ -272,15 +272,15 @@ margin-bottom: 2px;
     content: "";
     background-image: url('../images/gift.png');
     display: block;
-    width: 97px; /* Set a specific width */
-    height: 97px; /* Set a specific height */
+    width: 70px; /* Set a specific width */
+    height: 70px; /* Set a specific height */
     transform: rotate(5deg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     position: absolute;
     top: -15px;
-    left: -96px;
+    left: -76px;
 }
 
 /* FORMATS */
@@ -545,6 +545,8 @@ margin: 0 auto;
         font-size: 30px;
     }
 
+    /* TIMER */
+
     .timer-title {
         font-size: 60px; 
     }
@@ -581,9 +583,20 @@ margin: 0 auto;
         margin-bottom: 32px;
     }
 
+    .button-timer::before  {
+        width: 576px;
+        height: 371px;
+    }
+
     .timer-container-text {
         font-size: 20px;
     }
+
+    .timer-container-text::before {
+        width: 97px; /* Set a specific width */
+    height: 97px; /* Set a specific height */
+    }
+
 
     /* FORMATS */
 
