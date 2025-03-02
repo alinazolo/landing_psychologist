@@ -164,7 +164,6 @@ margin-top: -36px;
 
 .hero-container-text-mini {
     font-size: 18px;
-    padding-left: 20px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
@@ -248,7 +247,7 @@ margin-bottom: 2px;
 
 .button-timer::before {
     content: "";
-    display: block;
+    display: inline-block;
     width: 250px;
     height: 300px;
     border-radius: 100%;
@@ -271,7 +270,7 @@ margin-bottom: 2px;
 .timer-container-text::before {
     content: "";
     background-image: url('../images/gift.png');
-    display: block;
+    display: inline-block;
     width: 70px; /* Set a specific width */
     height: 70px; /* Set a specific height */
     transform: rotate(5deg);
@@ -302,17 +301,15 @@ gap: 20px;
     display: flex;
     margin: 0 auto;
     border-radius: 14px;
-    width: 288px;
+    width: 280px;
     height: 139px;
+    padding: 10px;
     box-shadow: 0 12px 34px -7px rgba(69, 65, 113, 0.16);
     background: linear-gradient(1deg, #890100 0%, #7f6464 89%);
-  
     align-items: center;
     justify-content: center;
-        
     font-weight: 600;
-    font-size: 20px;
-
+    font-size: 18px;
     text-align: center;
 }
 
@@ -541,6 +538,10 @@ margin: 0 auto;
         display: none;
     }
 
+    .hero-container-text-mini {
+        padding-left: 20px;
+    }
+
     .accent-text {
         font-size: 30px;
     }
@@ -584,6 +585,7 @@ margin: 0 auto;
     }
 
     .button-timer::before  {
+      
         width: 576px;
         height: 371px;
     }
@@ -593,8 +595,10 @@ margin: 0 auto;
     }
 
     .timer-container-text::before {
-        width: 97px; /* Set a specific width */
-    height: 97px; /* Set a specific height */
+   
+    width: 97px; 
+    height: 97px; 
+    left: -96px;
     }
 
 
